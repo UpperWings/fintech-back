@@ -1,12 +1,6 @@
 const {Pool} = require('pg')
+const config = require('../env/postgres.conf')
 
-const config = {
-    host: '10.255.30.82',
-    port: 5433,
-    database: 'fintech',
-    user: 'fintech',
-    password: 'fintech'
-}
 
 const pool = new Pool(config)
 
